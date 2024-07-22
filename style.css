@@ -1,0 +1,165 @@
+/* Define color scheme */
+:root {
+    --color-header-footer: #1b8d87;
+    --color-menu-bar: #333;
+    --color-content: #f5f5f5;
+    --color-sidebar: #f5f5f5;
+    --color-sidebar-border: #ccc;
+    --text-color: #333;
+    --link-color: #fff; /* Color for links */
+    --link-hover-color: #0eee55; /* Color for links on hover */
+    --sidebar-link-color: #336699;
+    --sidebar-link-hover-color: #ff5733;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--color-content);
+    color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--color-header-footer);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+nav {
+    background-color: var(--color-menu-bar);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color); 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-gap: 10px;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; 
+}
+
+aside {
+    background-color: var(--color-sidebar);
+    padding: 10px;
+    border: 1px solid var(--color-sidebar-border);
+}
+
+aside a {
+    color: var(--sidebar-link-color);
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+aside a:hover {
+    color: var(--sidebar-link-hover-color); 
+}
+
+main {
+    background-color: var(--color-content);
+    padding: 10px;
+    border: 1px solid var(--color-sidebar-border);
+}
+.about-me p {
+    text-align: justify;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.profile-pic {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: justify;
+    border-bottom: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: var(--color-menu-bar);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="reset"] {
+    background-color: #bbb;
+}
+
+form button:hover {
+    background-color: var(--link-hover-color); 
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

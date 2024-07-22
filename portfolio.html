@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="left-sidebar">
+            <h2>Study Links</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="portfolio">
+                <h2>My Projects</h2>
+                <table>
+                    <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Smart Home Automation System</td>
+                        <td>This project involves designing and implementing an intelligent system to automate various household functions. It integrates IoT devices to control lighting, heating, security, and appliances remotely through a centralized platform, enhancing convenience, energy efficiency, and security.</td>
+                        <td>March 2020</td>
+                        <td>Bangladesh</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Intelligent Traffic Management System</td>
+                        <td>This project focuses on developing a system that utilizes real-time data and AI algorithms to optimize traffic flow in urban areas. It aims to reduce congestion, improve road safety, and enhance the overall efficiency of transportation networks by dynamically adjusting traffic signals and providing real-time traffic updates to commuters.</td>
+                        <td>May 2021</td>
+                        <td>Bangladesh</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Healthcare Management Information System</td>
+                        <td>This project entails creating a comprehensive system to manage healthcare operations, including patient records, appointments, billing, and inventory. The system improves administrative efficiency, ensures data accuracy, and enhances patient care by providing healthcare providers with quick access to critical information.</td>
+                        <td>July 2022</td>
+                        <td>Bangladesh</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>IoT-Based Environmental Monitoring System</td>
+                        <td>This project involves developing a network of IoT sensors to monitor environmental conditions such as air quality, temperature, humidity, and pollution levels. The system collects and analyzes data in real-time, providing valuable insights for environmental protection agencies and helping to address ecological challenges.</td>
+                        <td>September 2022</td>
+                        <td>Bangladesh</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Automated Inventory Management System</td>
+                        <td>This project aims to design a system that automates inventory tracking and management processes in warehouses or retail settings. It uses RFID technology, barcode scanning, and real-time data analytics to monitor stock levels, track product movement, and optimize inventory replenishment, reducing human error and operational costs.</td>
+                        <td>November 2023</td>
+                        <td>Bangladesh</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <aside class="right-sidebar">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Islam Md Refadul</p>
+       
+    </footer>
+</body>
+</html>
